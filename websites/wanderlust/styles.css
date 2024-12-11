@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%; 
+    margin: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+    display: flex; /* Use flexbox to control layout */
+    flex-direction: column; /* Stack children vertically */
+}
+
+header {
+    background-image: url('images/sea-water-and-tropical-beach-background-header.jpg');
+    background-size: cover; /* Makes the image cover the entire header area */
+    background-position: center; 
+    background-repeat: no-repeat; 
+    color: black; 
+    padding: 30px; 
+    text-align: center; 
+}
+
+.sticky-nav {
+    background-color: #005f87;
+    position: sticky;  /* Sticky keeps the nav bar "stuck" at the top of the viewport when scrolling down */
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.sticky-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.sticky-nav li {
+    margin: 0 15px;
+}
+
+.sticky-nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.sticky-nav a:hover {
+    background-color: #ddd58c;
+    color: #333;
+}
+
+main {
+    flex: 1; /* Allow main content to grow and fill available space */
+    padding: 20px;
+}
+
+.content {
+    position: relative; /* The parent element is set to relative so that the absolute child element (callout) is positioned relative to this parent */
+}
+
+
+.float-img {
+    float: left; /* Float property positions the image to the left of the content, allowing text to wrap around the image */
+    margin: 0 15px 15px 0; 
+    border: 5px solid #ddd;
+    border-radius: 5px;
+}
+
+.callout {
+    position: absolute; /* Absolute positioning places the callout in relation to the nearest positioned ancestor (the .content with relative positioning) */
+    top: 90px;
+    right: -10px;
+    background-color: #ffeb3b;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    background-color: #0077be;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative; /* Setting relative positioning here keeps the footer in flow, but allows further styling if needed */
+    margin-top: 20px; 
+}

@@ -1,0 +1,198 @@
+/* Custom Colors */
+:root {
+    --golden-yellow: #f8d47c;
+    --soft-brown: #d4a373;
+    --light-cream: #fff8e7;
+    --dark-brown: #5a3a29;
+    --neutral-gray: #f5f5f5;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+    width: 100%; /* Ensures links are centered across the navbar */
+}
+
+.navbar-brand {
+    margin-right: auto; /* Keeps the brand on the left while centering links */
+}
+
+/* Global Styles */
+body {
+    background-color: var(--light-cream);
+    color: var(--dark-brown);
+}
+
+.golden-bg {
+    background-color: var(--golden-yellow);
+}
+
+.golden-text {
+    color: var(--soft-brown);
+}
+
+/* Logo Section */
+.logo-container {
+    text-align: center;
+    padding: 20px 0;
+    background-color: var(--neutral-gray);
+    border-bottom: 2px solid var(--golden-yellow);
+}
+
+.logo-container img {
+    max-height: 150px;
+}
+
+/* Hero Section */
+.hero-section {
+    background-image: url('images/4B18B292-C7DA-4017-94A9-3DA5F441A0F8.jpg'); /* Replace with actual image path */
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    color: white;
+    
+}
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(172, 147, 147, 0.744); /* Adjust opacity for the background image */
+    z-index: 0;
+}
+
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.807); /* Semi-transparent dark background */
+    padding: 30px;
+    border-radius: 8px;
+    z-index: 10; /* Ensure it stays above the background */
+    position: relative;
+}
+
+.hero-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* Carousel Styles */
+.carousel-inner img {
+    width: 100%;
+    height: 400px; /* Set a fixed height */
+    object-fit: cover; /* Maintain aspect ratio and crop to fit */
+}
+
+/* Service Cards */
+.service-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--golden-yellow);
+    color: var(--dark-brown);
+    border-radius: 8px;
+    min-height: 400px; /* Ensure all cards have the same minimum height */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service-card h3 {
+    color: var(--dark-brown);
+    font-size: 1.5rem;
+}
+
+.service-icon {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+/* Contact Form Buttons */
+.btn-primary {
+    background-color: var(--soft-brown);
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: var(--dark-brown);
+}
+
+.btn-danger {
+    background-color: var(--dark-brown);
+    border: none;
+}
+
+.btn-danger:hover {
+    background-color: var(--soft-brown);
+}
+
+/* Service Cards */
+.service-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--golden-yellow);
+    color: var(--dark-brown);
+    border-radius: 8px;
+    min-height: 400px; /* Ensure all cards have the same minimum height */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: scale(1.05); /* Slightly grow the card */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add a stronger shadow */
+}
+
+.service-card h3 {
+    color: var(--dark-brown);
+    font-size: 1.5rem;
+}
+
+.service-card ul {
+    margin-top: 20px;
+}
+
+.service-card a {
+    margin-top: 10px;
+    color: var(--dark-brown);
+    text-decoration: none;
+}
+
+.service-card a:hover {
+    color: var(--soft-brown);
+}
+
+.service-card button {
+    background-color: var(--soft-brown);
+    color: var(--dark-brown);
+    border: none;
+    border-radius: 4px;
+    padding: 10px 15px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.service-card button:hover {
+    background-color: var(--dark-brown);
+    color: white;
+    cursor: pointer;
+}
+

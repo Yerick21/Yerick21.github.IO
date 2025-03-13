@@ -6,6 +6,27 @@ body, h1, h2, h3, p, ul, li, a {
     text-decoration: none;
 }
 
+/* Dark Mode */
+.dark-mode {
+    background-color: #222;
+    color: white;
+}
+
+.dark-mode header, .dark-mode footer {
+    background-color: #005bb5;
+}
+
+.dark-mode .about-text,
+.dark-mode .skill-card,
+.dark-mode .project-card {
+    background-color: #333;
+    color: white;
+}
+
+.dark-mode .project-link {
+    background-color: #00aaff;
+}
+
 /* Body Style */
 body {
     font-family: Arial, sans-serif;
